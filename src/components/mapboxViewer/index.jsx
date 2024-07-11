@@ -5,20 +5,30 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
+import { BASEMAP_STYLES, BASEMAP_ID_DEFAULT } from './helper';
+
+const accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
+const mapboxStyleBaseUrl = process.env.REACT_APP_MAPBOX_STYLE_URL;
+
 export class MapBoxViewer extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             currentViewer: null
         }
     }
 
     componentDidMount() {
-        mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+        mapboxgl.accessToken = accessToken;
+        let mapboxStyleUrl = 'mapbox://styles/mapbox/streets-v12';
+        if (mapboxStyleBaseUrl) {
+            let styleId = BASEMAP_STYLES.findIndex(style => style.id === BASEMAP_ID_DEFAULT);
+            mapboxStyleUrl = `${mapboxStyleBaseUrl}/${BASEMAP_STYLES[styleId].mapboxId}`;
+        }
+
         const map = new mapboxgl.Map({
             container: 'mapbox-container',
-            style: 'mapbox://styles/mapbox/streets-v12',
+            style: mapboxStyleUrl,
             center: [-74.5, 40],
             zoom: 9
         });
