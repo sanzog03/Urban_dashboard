@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import { MapBoxViewer } from '../mapboxViewer';
 import { Title } from '../title';
+import { DetailAnalysis } from '../detailAnalysis';
 
 function Dashboard() {
   return (
@@ -9,6 +10,7 @@ function Dashboard() {
       className="fullSize dashboard">
         <Title/>
         <MapBoxViewer/>
+        <DetailAnalysis/>
     </Box>
   );
 }
