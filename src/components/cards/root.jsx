@@ -1,0 +1,30 @@
+import * as React from "react";
+import PropTypes from "prop-types";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import CardHeader from "@mui/material/CardHeader";
+
+export function RootCard({ children, title, description }) {
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardHeader title={title} />
+      {children}
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          {description}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
+
+RootCard.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element.isRequired,
+  ]),
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
