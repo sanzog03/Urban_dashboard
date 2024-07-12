@@ -22,6 +22,6 @@
     right: 1%;
 }
 
-.insights div {
+.insights > div > div {
     margin-bottom: 10%;
 }

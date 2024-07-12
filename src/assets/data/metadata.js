@@ -1,4 +1,9 @@
 export let meta = {
+    populationData: {
+        total: 7900000000,
+        urban: 56,
+        rural: 44
+    },
     buildingData: {
         total: 204000, // units
         area: 54000000, // in square meters
