@@ -45,7 +45,7 @@ export class MapBoxViewer extends Component {
                 <Grid container className="fullSize">
                     <Grid item xs={12}>
                         {/* <div id="mapbox-container" className='fullSize' style={{ position: "absolute" }}></div> */}
-                        <div id="mapbox-container" className='fullSize' style={{ width: "auto", height: "1024px" }}></div>
+                        <div id="mapbox-container" className='fullSize' style={{ position: "static", width: "auto", height: "1024px" }}></div>
                     </Grid>
                 </Grid>
                 <Insights/>

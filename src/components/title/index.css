@@ -3,11 +3,10 @@
     width: 345px;
     min-width: 275px;
     max-width: 345px;
-    position: absolute;
+    position: sticky;
     font-size: 1rem;
     top: 1%;
     left: 1%;
-    /* width: 40%; */
     padding: 10px 24px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

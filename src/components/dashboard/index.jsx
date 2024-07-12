@@ -9,9 +9,6 @@ function Dashboard() {
       className="fullSize dashboard">
         <Title/>
         <MapBoxViewer/>
-        <div>
-          More items
-        </div>
     </Box>
   );
 }
