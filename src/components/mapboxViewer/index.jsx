@@ -5,7 +5,10 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
+import './index.css';
+
 import { BASEMAP_STYLES, BASEMAP_ID_DEFAULT } from './helper';
+import { Insights } from '../insights';
 
 const accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 const mapboxStyleBaseUrl = process.env.REACT_APP_MAPBOX_STYLE_URL;
@@ -39,12 +42,13 @@ export class MapBoxViewer extends Component {
     render() {
         return (
             <Fragment>
-                <Box component="main" className="fullSize" sx={{ flexGrow: 1 }}>
+                <Box component="main" className="map-section">
                     <Grid container className="fullSize">
-                        <Grid item xs={12} sx={{ position: "relative" }}>
+                        <Grid item xs={12}>
                             <div id="mapbox-container" className='fullSize' style={{ position: "absolute" }}></div>
                         </Grid>
                     </Grid>
+                    <Insights/>
                 </Box>
             </Fragment>
         );    

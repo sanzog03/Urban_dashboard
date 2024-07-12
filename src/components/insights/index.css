@@ -1,0 +1,23 @@
+/* parent div of insights should be relative,
+ else insight would be applied with repect to body */
+
+ .insights {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 10%;
+    color: white;
+}
+  
+.insights-left {
+    display: block;
+    position: absolute;
+    left: 1%;
+}
+
+.insights-right {
+    display: block;
+    position: absolute;
+    right: 1%;
+}

@@ -5,9 +5,7 @@ import { Title } from '../title';
 
 function Dashboard() {
   return (
-    <Box 
-      display={"flex"}
-      flexDirection={"column"}
+    <Box
       className="fullSize">
         <MapBoxViewer/>
         <Title/>
