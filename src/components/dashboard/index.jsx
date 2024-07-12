@@ -6,9 +6,12 @@ import { Title } from '../title';
 function Dashboard() {
   return (
     <Box
-      className="fullSize">
-        <MapBoxViewer/>
+      className="fullSize dashboard">
         <Title/>
+        <MapBoxViewer/>
+        <div>
+          More items
+        </div>
     </Box>
   );
 }

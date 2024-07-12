@@ -41,16 +41,15 @@ export class MapBoxViewer extends Component {
 
     render() {
         return (
-            <Fragment>
-                <Box component="main" className="map-section">
-                    <Grid container className="fullSize">
-                        <Grid item xs={12}>
-                            <div id="mapbox-container" className='fullSize' style={{ position: "absolute" }}></div>
-                        </Grid>
+            <Box component="main" className="map-section">
+                <Grid container className="fullSize">
+                    <Grid item xs={12}>
+                        {/* <div id="mapbox-container" className='fullSize' style={{ position: "absolute" }}></div> */}
+                        <div id="mapbox-container" className='fullSize' style={{ width: "auto", height: "1024px" }}></div>
                     </Grid>
-                    <Insights/>
-                </Box>
-            </Fragment>
+                </Grid>
+                <Insights/>
+            </Box>
         );    
     }
 }

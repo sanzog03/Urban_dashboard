@@ -1,7 +1,7 @@
 /* parent div of insights should be relative,
  else insight would be applied with repect to body */
 
- .insights {
+.insights {
     display: block;
     position: absolute;
     width: 100%;
