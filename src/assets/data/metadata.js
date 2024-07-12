@@ -26,5 +26,9 @@ export let meta = {
     },
     roofTopSolarData: {
         number: 3530000
-    }
+    },
+    landCoverageData: {
+        area: 100000000,
+        coverage: 29000000
+    },
 }

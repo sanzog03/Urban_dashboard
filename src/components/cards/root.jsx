@@ -17,11 +17,13 @@ export function RootCard({ children, title, description, subDescription }) {
         sx={{marginBottom: 0}}
       />
       {children}
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-        {description}
-        </Typography>
-      </CardContent>
+      {description &&
+        <CardContent>
+            <Typography variant="body2" color="text.secondary">
+            {description}
+            </Typography>
+        </CardContent>
+    }
     </Card>
   );
 }
