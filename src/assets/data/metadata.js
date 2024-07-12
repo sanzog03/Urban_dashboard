@@ -16,7 +16,6 @@ export let meta = {
         foot: 10,
         bus: 5,
         bicycle: 5
-
     },
     treeData: {
         total: 1000000,
@@ -30,5 +29,10 @@ export let meta = {
     landCoverageData: {
         area: 100000000,
         coverage: 29000000
+    },
+    airQualityData: {
+        aqi: 64,
+        co2: 344,
+        ch4: 455
     },
 }

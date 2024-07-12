@@ -5,6 +5,7 @@ import './index.css';
 import { PopulationCard } from "../cards/population";
 import { TransportationCard } from "../cards/transportation";
 import { LandCoverageCard } from "../cards/landCoverage";
+import { AirQualityCard } from "../cards/defaultAir";
 
 export function Insights() {
     return (
@@ -15,7 +16,7 @@ export function Insights() {
             </LeftInsights>
             <RightInsights>
                 <LandCoverageCard/>
-                <PopulationCard/>
+                <AirQualityCard/>
             </RightInsights>
         </div>
     );
