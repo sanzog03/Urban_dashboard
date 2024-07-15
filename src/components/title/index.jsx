@@ -1,6 +1,8 @@
 import React from 'react';
-import './index.css';
 import Typography from '@mui/material/Typography';
+import { UrbanSelector } from './helper/urbanSelector.jsx';
+
+import './index.css';
 
 export function Title () {
     return (
@@ -8,6 +10,7 @@ export function Title () {
             <Typography variant='h5'>
                 Urban Dashboard
             </Typography>
+            <UrbanSelector />
         </div>
     );
 }
