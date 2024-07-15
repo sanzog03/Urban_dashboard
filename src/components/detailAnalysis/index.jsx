@@ -6,7 +6,7 @@ import "./index.css";
 
 export function DetailAnalysis() {
     const towerDataViewerUrl = "https://ghgc-custom-interfaces-develop.s3.us-west-2.amazonaws.com/ghgcenter/custom-interfaces/noaa-gggrn-ghg-concentrations-temp/index.html?ghg=co2&frequency=all&station_code=WGC";
-    const airborneViewerUrl = "https://ghgc-custom-interfaces-develop.s3.us-west-2.amazonaws.com/ghgcenter/custom-interfaces/noaa-airborne-viewer/index.html";
+    const airborneViewerUrl = "http://ghgc-custom-interfaces-develop-airborne-visualization.s3-website-us-west-2.amazonaws.com";
 
     return (
         <Container maxWidth="xl" className='detail-analysis-container'>
