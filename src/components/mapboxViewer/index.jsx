@@ -10,6 +10,8 @@ import './index.css';
 import { BASEMAP_STYLES, BASEMAP_ID_DEFAULT } from './helper';
 import { Insights } from '../insights';
 
+import { GeoJSON, center } from '../../assets/geojson/LA';
+
 const accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 const mapboxStyleBaseUrl = process.env.REACT_APP_MAPBOX_STYLE_URL;
 
@@ -32,11 +34,44 @@ export class MapBoxViewer extends Component {
         const map = new mapboxgl.Map({
             container: 'mapbox-container',
             style: mapboxStyleUrl,
-            center: [-74.5, 40],
             zoom: 9
         });
 
+        this.focusSelectedUrbanRegion(map, center, GeoJSON);
+
         this.setState({currentViewer: map});
+    }
+
+    focusSelectedUrbanRegion = (map, center, GeoJSON) => {
+        map.setCenter(center);
+        map.on('load', () => {
+            map.addSource('urban-boundary', {
+                'type': 'geojson',
+                'data': GeoJSON
+            });
+
+            map.addLayer({
+                'id': 'boundary-fill',
+                'type': 'fill',
+                'source': 'urban-boundary',
+                'layout': {},
+                'paint': {
+                    'fill-color': '#888888',
+                    'fill-opacity': 0.4
+                }
+            });
+
+            map.addLayer({
+                'id': 'boundary-outline',
+                'type': 'line',
+                'source': 'urban-boundary',
+                'layout': {},
+                'paint': {
+                    'line-color': '#c3b592',
+                    'line-width': 2
+                }
+            });
+        });
     }
 
     render() {
