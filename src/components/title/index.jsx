@@ -4,13 +4,20 @@ import { UrbanSelector } from './helper/urbanSelector.jsx';
 
 import './index.css';
 
-export function Title () {
+export function Title ({children}) {
+    if (!children) {
+        children = (
+            <>
+                <Typography variant='h5'>
+                    Urban Dashboard
+                </Typography>
+                <UrbanSelector />
+            </>
+        )
+    }
     return (
         <div id="title">
-            <Typography variant='h5'>
-                Urban Dashboard
-            </Typography>
-            <UrbanSelector />
+            {children}
         </div>
     );
 }

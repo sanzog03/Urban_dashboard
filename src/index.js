@@ -7,7 +7,7 @@ import {
 
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import { ExploreData } from './components/exploreData';
+import { ExploreTowerData } from './components/exploreData/exploreTowerData';
 
 import './index.css';
 
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/explore",
-    element: <ExploreData />,
+    element: <ExploreTowerData />,
   },
 ]);
 
