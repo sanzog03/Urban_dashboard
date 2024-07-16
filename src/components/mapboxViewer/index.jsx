@@ -34,7 +34,7 @@ export class MapBoxViewer extends Component {
         const map = new mapboxgl.Map({
             container: 'mapbox-container',
             style: mapboxStyleUrl,
-            zoom: 9
+            zoom: 9.5
         });
 
         this.focusSelectedUrbanRegion(map, center, GeoJSON);

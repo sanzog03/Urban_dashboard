@@ -28,7 +28,7 @@ Another important application of NOAA’s tower data is in air quality monitorin
                 <Container>
                     <div className='explore-title'>
                         <Typography variant="h5">
-                            Explore Tower data
+                            Explore Tower Data
                         </Typography>
                     </div>
                     <div className='explore-body'>
