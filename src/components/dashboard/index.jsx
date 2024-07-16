@@ -7,11 +7,11 @@ import { DetailAnalysis } from '../detailAnalysis';
 function Dashboard() {
   return (
     <Box
-      className="fullSize dashboard">
+      className="fullSize">
         <Title/>
         <MapBoxViewer/>
-        <DetailAnalysis/>
-        <Box marginBottom={8} sx={{ height: "5%" }} />
+        {/* <DetailAnalysis/>
+        <Box marginBottom={8} sx={{ height: "5%" }} /> */}
     </Box>
   );
 }
