@@ -67,7 +67,7 @@ export class MapBoxViewer extends Component {
                 'source': 'urban-boundary',
                 'layout': {},
                 'paint': {
-                    'line-color': '#c3b592',
+                    'line-color': '#fee2b3',
                     'line-width': 2
                 }
             });
