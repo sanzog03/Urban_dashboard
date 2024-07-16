@@ -21,6 +21,7 @@ One of the most significant aspects of NOAA’s tower data is its role in weathe
 In addition to weather forecasting, NOAA’s tower data are crucial for climate research. Long-term data sets from these towers enable scientists to study trends and changes in climate over time. By analyzing patterns in temperature, humidity, and other atmospheric conditions, researchers can gain insights into the impacts of global warming and other climatic shifts. This information is vital for developing strategies to mitigate and adapt to climate change, such as understanding the frequency and intensity of heatwaves, droughts, and other extreme weather events.
 
 Another important application of NOAA’s tower data is in air quality monitoring.`;
+
     return (
         <ExploreData embedLink={towerDataViewerUrl}>
             <Fragment>

@@ -8,6 +8,7 @@ import {
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import { ExploreTowerData } from './components/exploreData/exploreTowerData';
+import { ExploreAirborneData } from './components/exploreData/exploreAirborneData';
 
 import './index.css';
 
@@ -17,8 +18,12 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/explore",
+    path: "/explore/tower",
     element: <ExploreTowerData />,
+  },
+  {
+    path: "/explore/airborne",
+    element: <ExploreAirborneData />,
   },
 ]);
 

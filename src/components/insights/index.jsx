@@ -9,8 +9,8 @@ import { AirQualityCard } from "../cards/defaultAir";
 import { ExploreMoreCard } from "../cards/explore";
 
 export function Insights() {
-    const towerDataViewerUrl = "/explore";
-    const airborneViewerUrl = "https://ghgc-custom-interfaces-develop-airborne-visualization.s3-website-us-west-2.amazonaws.com";
+    const towerDataViewerUrl = "/explore/tower";
+    const airborneViewerUrl = "/explore/airborne";
 
     return (
         <div className="insights">

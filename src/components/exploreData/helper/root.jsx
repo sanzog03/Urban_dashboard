@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
+import PropTypes from 'prop-types';
+
 import '../index.css';
 
 export function ExploreData({children, embedLink}) {
@@ -16,4 +18,12 @@ export function ExploreData({children, embedLink}) {
             </div>
         </Fragment>
     );
+}
+
+ExploreData.propTypes = {
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.element),
+      PropTypes.element.isRequired
+    ]),
+    embedLink: PropTypes.string.isRequired
 }
