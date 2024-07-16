@@ -30,25 +30,27 @@ Another important application of NOAA’s tower data is in air quality monitorin
                             Explore Airborne data
                         </Typography>
                     </div>
-                    <Card>
-                        <Grid container spacing={2}>
-                            <Grid xs={6}>
-                                <div style={{ display: "flex", justifyContent: "center" }}>
-                                    <PopulationCard />
-                                </div>
+                    <div className='explore-body'>
+                        <Card>
+                            <Grid container spacing={2}>
+                                <Grid xs={6}>
+                                    <div style={{ display: "flex", justifyContent: "center" }}>
+                                        <PopulationCard />
+                                    </div>
+                                </Grid>
+                                <Grid xs={6} style={{ alignContent: "center" }}>
+                                    <Typography variant="body1" style={{ marginRight:"35px", textAlign: "justify" }}>
+                                        The NOAA Global Greenhouse Gas Reference Network (GGGRN) provides measurements of greenhouse gases at multiple sites around the world. The data is used to understand the global distribution of greenhouse gases and how they are changing over time. The data is also used to validate satellite observations of greenhouse gases and to improve our understanding of the processes that control their distribution in the atmosphere.
+                                    </Typography>
+                                </Grid>
                             </Grid>
-                            <Grid xs={6} style={{ alignContent: "center" }}>
-                                <Typography variant="body1" style={{ margin:"5px" }}>
-                                    The NOAA Global Greenhouse Gas Reference Network (GGGRN) provides measurements of greenhouse gases at multiple sites around the world. The data is used to understand the global distribution of greenhouse gases and how they are changing over time. The data is also used to validate satellite observations of greenhouse gases and to improve our understanding of the processes that control their distribution in the atmosphere.
-                                </Typography>
-                            </Grid>
-                        </Grid>
-                    </Card>
-                        <Typography variant="body1" style={{ margin:"5px" }}>
-                            {textContent}
-                        </Typography>
-                    <Card>
-                    </Card>
+                        </Card>
+                        <Card>
+                            <Typography variant="body1" style={{ margin:"5px" }}>
+                                {textContent}
+                            </Typography>
+                        </Card>
+                    </div>
                 </Container>
             </Fragment>
         </ExploreData>
