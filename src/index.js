@@ -1,36 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import { ExploreTowerData } from './components/exploreData/exploreTowerData';
-import { ExploreAirborneData } from './components/exploreData/exploreAirborneData';
 
 import './index.css';
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/explore/tower",
-    element: <ExploreTowerData />,
-  },
-  {
-    path: "/explore/airborne",
-    element: <ExploreAirborneData />,
-  },
-]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>
 );
 

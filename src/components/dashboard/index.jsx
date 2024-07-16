@@ -4,7 +4,7 @@ import { MapBoxViewer } from '../mapboxViewer';
 import { Title } from '../title';
 import { DetailAnalysis } from '../detailAnalysis';
 
-function Dashboard() {
+export function Dashboard() {
   return (
     <Box
       className="fullSize">
@@ -15,4 +15,3 @@ function Dashboard() {
     </Box>
   );
 }
-export default Dashboard;
