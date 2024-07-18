@@ -83,7 +83,7 @@ export class MapBoxViewer extends Component {
                         {/* <div id="mapbox-container" className='fullSize' style={{ position: "relative", width: "auto", height: "1024px" }}></div> */}
                     </Grid>
                 </Grid>
-                <Insights/>
+                <Insights urbanRegion={ this.props.urbanRegion }/>
             </Box>
         );    
     }

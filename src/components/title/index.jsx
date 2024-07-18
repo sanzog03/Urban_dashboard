@@ -4,14 +4,14 @@ import { UrbanSelector } from './helper/urbanSelector.jsx';
 
 import './index.css';
 
-export function Title ({children}) {
+export function Title ({children, selection, setSelection}) {
     if (!children) {
         children = (
             <>
                 <Typography variant='h5'>
                     Urban Dashboard
                 </Typography>
-                <UrbanSelector />
+                <UrbanSelector urbanRegion={selection} setUrbanRegion={setSelection}/>
             </>
         )
     }

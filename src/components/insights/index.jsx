@@ -8,7 +8,7 @@ import { LandCoverageCard } from "../cards/landCoverage";
 import { AirQualityCard } from "../cards/defaultAir";
 import { ExploreMoreCard } from "../cards/explore";
 
-export function Insights() {
+export function Insights({ urbanRegion }) {
     const towerDataViewerUrl = "/explore/tower";
     const airborneViewerUrl = "/explore/airborne";
 

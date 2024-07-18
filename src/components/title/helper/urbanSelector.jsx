@@ -5,10 +5,8 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
-export function UrbanSelector() {
+export function UrbanSelector({urbanRegion, setUrbanRegion}) {
   const urbanRegions = ["Los Angeles", "New York", "San Fransisco", "Indianapolis", "Chicago", "SLC"]
-
-  const [ urbanRegion, setUrbanRegion ] = useState(urbanRegions[0]);
 
   const clickHandler = (urbanRegion) => {
     setUrbanRegion(urbanRegion);
