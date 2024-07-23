@@ -11,7 +11,7 @@ export function Dashboard() {
     <Box
       className="fullSize">
         <Title selection={urbanRegion} setSelection={setUrbanRegion}/>
-        <MapBoxViewer urbanRegion={urbanRegion}/>
+        <MapBoxViewer urbanRegion={urbanRegion} setSelection={setUrbanRegion}/>
         {/* <DetailAnalysis/>
         <Box marginBottom={8} sx={{ height: "5%" }} /> */}
     </Box>
