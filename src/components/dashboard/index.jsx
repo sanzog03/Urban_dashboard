@@ -5,7 +5,7 @@ import { Title } from '../title';
 import { DetailAnalysis } from '../detailAnalysis';
 
 export function Dashboard() {
-  const [ urbanRegion, setUrbanRegion ] = useState("Los Angeles");
+  const [ urbanRegion, setUrbanRegion ] = useState("");
 
   return (
     <Box

@@ -11,7 +11,7 @@ export function Title ({children, selection, setSelection}) {
                 <Typography variant='h5'>
                     Urban Dashboard
                 </Typography>
-                <UrbanSelector urbanRegion={selection} setUrbanRegion={setSelection}/>
+                { selection && <UrbanSelector urbanRegion={selection} setUrbanRegion={setSelection}/> }
             </>
         )
     }
